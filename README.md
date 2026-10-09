@@ -61,6 +61,8 @@ Core programming: higher-order and pure functions, data structures, promises and
 
 Pre-course work, problem solving, debugging and setup.
 
+- [`python-basics`](./getting-started/python-basics) (October 2023, pre-course)
+- [`day-one`](./getting-started/day-one) (9 October 2023, the first day)
 - [`keep-learning`](./getting-started/keep-learning)
 - [`errors-and-debugging`](./getting-started/errors-and-debugging)
 - [`exports`](./getting-started/exports)
