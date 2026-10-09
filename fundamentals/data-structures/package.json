@@ -1,0 +1,23 @@
+{
+  "name": "fun-data-structures",
+  "version": "1.0.0",
+  "description": "Instructions for this repo can be found at:  https://l2c.northcoders.com/courses/fun/data-structures",
+  "main": "index.js",
+  "scripts": {
+    "test": " jest "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/femy4ever/fun-data-structures.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/femy4ever/fun-data-structures/issues"
+  },
+  "homepage": "https://github.com/femy4ever/fun-data-structures#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

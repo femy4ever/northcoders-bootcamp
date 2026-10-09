@@ -1,0 +1,23 @@
+{
+  "name": "fun-katas",
+  "version": "1.0.0",
+  "description": "Please see instructions for this repo [here](https://l2c.northcoders.com/courses/fun/solo-katas).",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/femy4ever/fun-katas.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/femy4ever/fun-katas/issues"
+  },
+  "homepage": "https://github.com/femy4ever/fun-katas#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

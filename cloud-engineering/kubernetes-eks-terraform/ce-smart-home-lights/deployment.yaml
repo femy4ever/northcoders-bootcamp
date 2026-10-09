@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nc-node-lights
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nc-node-lights
+  template:
+    metadata:
+      labels:
+        app: nc-node-lights
+    spec:
+      containers:
+      - name: nc-node-lights
+        image: ce-smart-home-lights:latest
+        ports:
+        - containerPort: 3000

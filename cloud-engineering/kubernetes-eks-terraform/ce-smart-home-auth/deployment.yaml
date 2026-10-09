@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nc-node-auth
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nc-node-auth
+  template:
+    metadata:
+      labels:
+        app: nc-node-auth
+    spec:
+      containers:
+      - name: nc-node-auth
+        image: ce-smart-home-auth:latest
+        ports:
+        - containerPort: 3000

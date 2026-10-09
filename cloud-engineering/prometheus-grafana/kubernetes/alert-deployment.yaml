@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: alert-server
+spec:
+  selector:
+    matchLabels:
+      app: alert-server
+  template:
+    metadata:
+      labels:
+        app: alert-server
+    spec:
+      containers:
+        - name: alert-server
+          image: alert-server:1.2.0
+          resources:
+            limits:
+              memory: "128Mi"
+              cpu: "500m"
+          ports:
+            - containerPort: 3000
+              env:
+              - name: ACCESS_KEY 
+                value: REMOVED_ACCESS_KEY_ID  
+              - name: SECRET_ACCESS_KEY
+                value: oHHnGyfP2l2MPr4e1fCULSQg8olykv9BKPNs746C
+              - name: RECIPIENT_ADDRESS 
+                value: femy4ever@gmail.com  
+              - name: SENDER_ADDRESS
+                value: b1220791@live.tees.ac.uk

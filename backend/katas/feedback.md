@@ -1,0 +1,3 @@
+# Feedback 
+
+You are missing tests in createRef is this still a work in progress? This should have started with either an empty array returning an empty object or an array with one person object in it. This is not a great demonstration of TDD and these challenges are a test of TDD. You are also missing some pure function tests in the other questions. The tests you have written are good, but there should be many more, the tests should almost tell a story of how you managed to break down and solve the problem.

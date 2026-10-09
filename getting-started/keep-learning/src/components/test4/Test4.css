@@ -1,0 +1,38 @@
+.gameTable {
+    height: auto;
+    width: auto;
+    border: solid black 1px;
+    padding: 0px;
+}
+
+.gameTable tr {
+    padding: 0px;
+    margin: 0px;
+}
+
+.gameTable td {
+    box-sizing: border-box;
+    height: 45px;
+    width: 45px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.gameTable td .X {
+    visibility: hidden;
+}
+
+.gameTable td:hover .X {
+    visibility: visible;
+}
+
+.X {
+    width: 40px;
+    height: 40px;
+    padding: 0px;
+    margin: 0px;
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+    font-size: large;
+}

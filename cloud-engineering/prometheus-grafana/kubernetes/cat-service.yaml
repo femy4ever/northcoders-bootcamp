@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: cat-server
+  labels:
+    app.kubernetes.io/part-of: cat-service
+  annotations:
+    prometheus.io/port: "metrics-port"
+    prometheus.io/scrape: "true"
+spec:
+  
+  selector:
+    app: cat-server
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 3000
+      name: metrics-port
+  type: LoadBalancer 

@@ -1,0 +1,27 @@
+{
+  "name": "ce-cat-cafe",
+  "version": "1.0.0",
+  "description": "Instrument and monitor a bunch of spoiled cats",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon listen.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/northcoders/ce-prometheus-grafana.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/northcoders/ce-prometheus-grafana/issues"
+  },
+  "homepage": "https://github.com/northcoders/ce-prometheus-grafana#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "prom-client": "^15.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

@@ -1,0 +1,22 @@
+.t3button {
+    background-color: orange;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: medium;
+    font-weight: bold;
+}
+.t3button:hover {
+    background-color: orangered;
+    cursor: pointer;
+}
+
+.t3button:active {
+    background-color: red;
+}
+
+#answerInput {
+    width: 200px;
+}

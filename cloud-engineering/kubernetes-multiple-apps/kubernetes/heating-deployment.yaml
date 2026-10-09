@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ce-project-heating 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ce-project-heating 
+  template:
+    metadata:
+      labels:
+        app: ce-project-heating 
+    spec:
+      containers:
+        - name: ce-project-heating 
+          image: femy4ever/ce-project-heating:latest
+          ports:
+          - containerPort: 3000
+          env:
+            - name: TABLE_NAME
+              value: "Heating"
+
+            - name: ACCESS_KEY
+              value: "REMOVED_ACCESS_KEY_ID"
+
+            - name: SECRET_ACCESS_KEY
+              value: "oHHnGyfP2l2MPr4e1fCULSQg8olykv9BKPNs746C"

@@ -1,0 +1,31 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress-status
+spec:
+  rules:
+  - host: a3e6a2f21a377420a96a4adba2beebc8-a19cadfb17ba8692.elb.eu-west-2.amazonaws.com
+    http:
+      paths:
+      - path: /api/status
+        pathType: Prefix
+        backend:
+          service:
+            name: ce-project-status 
+            port:
+              number: 80
+      - path: /api/lights
+        pathType: Prefix
+        backend:
+          service:
+            name: ce-project-lights
+            port:
+              number: 80
+      - path: /api/heating
+        pathType: Prefix
+        backend:
+          service:
+            name: ce-project-heating
+            port:
+              number: 80
+  ingressClassName: nginx

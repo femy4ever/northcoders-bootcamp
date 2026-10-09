@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nc-node-status
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nc-node-status
+  template:
+    metadata:
+      labels:
+        app: nc-node-status
+    spec:
+      containers:
+      - name: nc-node-status
+        image: ce-smart-home-status:latest
+        ports:
+        - containerPort: 3000

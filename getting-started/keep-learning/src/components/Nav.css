@@ -1,0 +1,28 @@
+.testLinks {
+    display: inline-flex;
+}
+
+.testLinks li {
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0px 50px;
+    font-size: 2em; 
+    color: blue;
+}
+
+.testLink {
+    text-decoration: none;
+}
+
+.testLinks a {
+    color: royalblue;
+    text-decoration: none;
+}
+
+.testLinks a:hover {
+    color: lightblue;
+}
+
+.testLinks a:active {
+    color: lightcyan;
+}

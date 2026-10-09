@@ -1,0 +1,23 @@
+{
+  "name": "test-psql-setup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test-psql-setup": "psql -f test-psql-setup.sql && PGDATABASE=test_psql_setup node test-psql-setup.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/northcoders/test-psql-setup.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/northcoders/test-psql-setup/issues"
+  },
+  "homepage": "https://github.com/northcoders/test-psql-setup#readme",
+  "dependencies": {
+    "pg": "^8.8.0"
+  }
+}

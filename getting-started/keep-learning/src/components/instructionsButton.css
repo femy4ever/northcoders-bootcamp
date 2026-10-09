@@ -1,0 +1,18 @@
+.instructionsButton {
+    background-color: rgb(59, 59, 59);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: solid 1px rgb(30, 30, 30);
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.instructionsButton:hover {
+    opacity: 0.8;
+}
+
+.instructionsButton:active {
+    opacity: 0.5;
+}

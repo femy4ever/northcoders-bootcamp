@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nc-node-heating
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nc-node-heating
+  template:
+    metadata:
+      labels:
+        app: nc-node-heating
+    spec:
+      containers:
+      - name: nc-node-heating
+        image: ce-smart-home-heating:latest
+        ports:
+        - containerPort: 3000

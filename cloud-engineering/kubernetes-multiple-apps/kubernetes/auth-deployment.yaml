@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ce-smart-home-auth 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ce-smart-home-auth 
+  template:
+    metadata:
+      labels:
+        app: ce-smart-home-auth
+    spec:
+      containers:
+        - name: ce-smart-home-auth  
+          image: femy4ever/ce-smart-home-auth:latest
+          ports:
+          - containerPort: 3000
+          # env:
+          #   - name: TABLE_NAME
+          #     value: "Lighting"
+
+          #   - name: ACCESS_KEY
+          #     value: "REMOVED_ACCESS_KEY_ID"
+
+          #   - name: SECRET_ACCESS_KEY
+          #     value: "oHHnGyfP2l2MPr4e1fCULSQg8olykv9BKPNs746C"

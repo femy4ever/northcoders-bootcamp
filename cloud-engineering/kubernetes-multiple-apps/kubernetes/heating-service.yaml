@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: ce-project-heating
+spec:
+  type: ClusterIP
+  selector:
+    app: ce-project-heating 
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 3000
+  

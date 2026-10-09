@@ -1,0 +1,10 @@
+global:
+  scrape_interval: 15s  
+
+rule_files:
+  - /kubernetes/alert_rules.yaml
+
+scrape_configs:
+  - job_name: 'cat-server'
+    static_configs:
+      - targets: ['cat-server:80']

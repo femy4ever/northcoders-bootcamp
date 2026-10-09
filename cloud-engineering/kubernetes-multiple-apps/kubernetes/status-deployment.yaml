@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ce-project-status 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ce-project-status 
+  template:
+    metadata:
+      labels:
+        app: ce-project-status 
+    spec:
+      containers:
+        - name: ce-project-status 
+          image: femy4ever/ce-project-status:latest
+          ports:
+          - containerPort: 3000
+          env:
+            - name: LIGHTS_SERVICE
+              value: "http://ce-project-lights.default.svc.cluster.local"
+
+            - name: HEATING_SERVICE
+              value: "http://ce-project-heating.default.svc.cluster.local"
+
+            - name: AUTH_SERVICE
+              value: "http://ce-smart-home-auth.default.svc.cluster.local"
+
+
+              

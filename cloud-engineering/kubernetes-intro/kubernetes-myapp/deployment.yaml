@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nc-node-api
+spec:
+  replicas: 6
+  selector:
+    matchLabels:
+      app: nc-node-api
+  template:
+    metadata:
+      labels:
+        app: nc-node-api
+    spec:
+      containers:
+      - name: nc-node-api-app
+        image: femy4ever/nc-node-api:latest
+        ports:
+        - containerPort: 80

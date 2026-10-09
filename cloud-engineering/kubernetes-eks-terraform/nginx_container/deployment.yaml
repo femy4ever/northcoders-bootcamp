@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nc-nginx
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nc-nginx
+  template:
+    metadata:
+      labels:
+        app: nc-nginx
+    spec:
+      containers:
+      - name: nc-nginx-app
+        image: nginx:1.25.0-alpine
+        ports:
+        - containerPort: 80
